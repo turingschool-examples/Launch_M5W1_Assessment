@@ -1,0 +1,9 @@
+﻿@model List<Album>
+
+<h1>Albums</h1>
+
+@foreach (var item in Model)
+{
+    <h3>@item.Artist: @item.Title</h3>
+    <p>@item.ReleaseDate.ToShortDateString()</p>
+}

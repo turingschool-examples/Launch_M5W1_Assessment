@@ -1,7 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using RecordCollection.DataAccess;
+using Serilog;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var log = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateLogger();
+
+builder.Services.AddSingleton<Serilog.ILogger>(log);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

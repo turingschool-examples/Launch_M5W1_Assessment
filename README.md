@@ -4,6 +4,7 @@ For this assessment, imagine that you are at an interview.  Answer each question
 
 ### Setup
 * Fork and Clone this repository
+* Run `update-database`
 
 ## Questions (7 points)
 
@@ -14,21 +15,22 @@ For this assessment, imagine that you are at an interview.  Answer each question
 
 1. How would you rate your comfort level and abilities when working with a SQL database? (3 points)
 
-2. How do you familiarize yourself with a codebase you haven’t worked in before? (3 points)
+2. How do you familiarize yourself with a codebase you havenâ€™t worked in before? (3 points)
 
 ## Exercise (11 points)
 
 ### Setup and Workflow (1 point)
-* Check out a branch called `data-validations-logging`
+* Check out a branch called `error-handling-logging`
 * Review the existing code in the 'RecordCollection' project
 	* run the project, and play around with all MVC and API endpoints
 
-There are **many** places where this app could use some work in Data Validations **and** Logging.
+There are **many** places where this app could use some work in Error Handling **and** Logging.
 * Identify at least 5 areas for improvement, and:
 	* implement the improvement (1 point each)
 * Use a Pull Request to merge your branch into **your** main branch
 * In the PR comment, add a note for **each improvement** you made explaining why you decided to make the improvement. (1 point each)
 
+It is up to you to decide what improvements to make, but you need to include at least 2 of each type (Error Handling and Logging).
 
 ## Rubric
 

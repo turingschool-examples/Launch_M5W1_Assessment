@@ -32,6 +32,7 @@ namespace RecordCollection.Controllers
 
         [Route("/albums/{id:int}")]
         public IActionResult Show(int? id)
+
         {
             if(id == null)
             {

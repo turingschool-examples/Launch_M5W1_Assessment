@@ -5,12 +5,24 @@ using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var log = new LoggerConfiguration()
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
     .WriteTo.Console()
+    .WriteTo.File("ErrorLogs/Logs.txt", outputTemplate: "{Timestamp:yyyy-MM-dd} [{Level:w3}] {Message:1j}{NewLine}{Exception}")
     .CreateLogger();
 
-builder.Services.AddSingleton<Serilog.ILogger>(log);
 
+Log.Information("I like Turtles :)");
+
+
+
+
+
+
+
+
+
+//
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
